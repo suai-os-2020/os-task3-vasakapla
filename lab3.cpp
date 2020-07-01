@@ -73,6 +73,7 @@ DWORD WINAPI thread_e(LPVOID text)
 
 	WaitForSingleObject(Thread[2], INFINITE); //c
 	WaitForSingleObject(Thread[3], INFINITE); //d
+	WaitForSingleObject(Thread[1], INFINITE); //b
 
 	ReleaseSemaphore(SemSecond, 1, NULL);
 
